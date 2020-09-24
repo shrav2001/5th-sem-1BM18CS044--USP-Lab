@@ -1,0 +1,18 @@
+#! /bin/sh
+echo "enter the radius"
+read r
+area=`echo 3.1415 \* $r \* $r|bc`
+echo "The area of circle is : $area"
+echo "enter two values for the calculator"
+read a
+read b
+sum=`echo $a + $b|bc`
+diff=`echo $a - $b|bc`
+prod=`echo $a \* $b|bc`
+rem=`echo $a % $b|bc`
+div=`echo "scale=2; $a / $b"|bc`
+echo "addition result : $sum"
+echo "subtraction result : $diff"
+echo "multiplication result : $prod"
+echo "Remainder when a is divided by b : $rem"
+echo "Quotient when a is divided by b : $div"
