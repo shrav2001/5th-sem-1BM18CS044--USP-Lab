@@ -1,0 +1,12 @@
+#! /bin/sh
+echo "Enter the number:"
+read n
+if [ $n -lt 0 ]
+then
+	echo "It is Negative"
+elif [ $n -gt 0 ]
+then
+	echo "It is Positive"
+else
+	echo "It is equal to zero"
+fi
