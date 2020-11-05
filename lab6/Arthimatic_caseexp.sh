@@ -1,15 +1,12 @@
 #!/bin/sh
 #Arithmetic Operations on a set of two numbers using case expression
 
-echo "Enter first no"
+echo "Enter two numbers"
 read a
-
-echo "Enter second number"
 read b
 
-echo "1. Addition\n2.Subtraction\n3.Multiplication\n4.Division"
+echo "Enter\n1. Addition\n2.Subtraction\n3.Multiplication\n4.Division"
 
-echo "Enter your choice"
 read option
 
 case $option in
@@ -26,8 +23,6 @@ case $option in
 	4) div=`expr $a / $b`
 	   echo "Quotient:   "$div
 	   ;;
-	*) echo "Not a valid option"
+	*) echo "Invalid"
 	   ;;
 esac 
-
-
